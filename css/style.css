@@ -32,7 +32,7 @@ body {
 /* SIDEBAR */
 .sidebar {
 	width: 230px;
-	background-color: #111827;
+	background-color: black;
 	padding: 20px;
 	overflow: auto;
 	display : flex ; 
@@ -136,4 +136,36 @@ body {
 
 .sidebar-logo img {
 	width: 140px;
+}
+
+
+/* SIDEBAR  BLOCCO MENU */
+
+.sidebar-nav {
+	margin-top: 40px;
+}
+
+.sidebar-menu {
+	display : flex ; 
+	flex-direction: column;
+	list-style: none;
+}
+
+.sidebar-icon {
+	width : 40px ; 
+	height: 40px;
+	margin-right: 10px;
+	
+}
+
+.sidebar-link {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
+
+.sidebar-menu li {
+	padding-bottom: 5px;
 }
