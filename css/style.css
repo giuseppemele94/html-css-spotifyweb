@@ -35,7 +35,10 @@ body {
 	background-color: #111827;
 	padding: 20px;
 	overflow: auto;
-	/* scroll della sidebar al rimpicciolimento*/
+	display : flex ; 
+	flex-direction: column;
+	justify-content: space-between;
+	
 }
 
 /* CONTENUTO CENTRALE */
@@ -123,4 +126,14 @@ body {
 
 .tab-link:hover::after {
     background-color: #1db954; /* compare al hover */
+}
+
+/* SIDEBAR  BLOCCO LOGO*/
+
+.sidebar-top {
+	padding-bottom: 20px;
+}
+
+.sidebar-logo img {
+	width: 140px;
 }
