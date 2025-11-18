@@ -72,7 +72,7 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 10;
-	background-color: #111827;
+	background-color: #19191a;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -162,10 +162,107 @@ body {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	color: white;
+	color: #9ca3af;;
 	font-size: 15px;
+}
+
+.sidebar-link:hover {
+	color: white;
 }
 
 .sidebar-menu li {
 	padding-bottom: 5px;
+}
+
+
+/* SIDEBAR  BLOCCO PLAYLSIT */
+
+.sidebar-playlist {
+	margin-top : 25px; 
+}
+
+.sidebar-title {
+	margin-bottom: 15px;
+	color: white;
+}
+
+.playlist-plus {
+	font-size: 30px;
+	margin-right: 10px;
+	background-color: white;
+	color: black;
+	padding: 3px 10px;
+}
+
+.playlist-list {
+	list-style: none;
+	padding-top: 20px;
+	display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.playlist-link {
+	text-decoration: none;
+	color: #9ca3af;
+    padding : 6px 0; 
+}
+
+.playlist-link:hover {
+	color: white ; 
+}
+
+/* SIDE BAR BOTTOM */
+
+.install-app {
+	display: flex;
+	color: #9ca3af;
+	text-decoration: none;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.install-icon {
+	width : 20px ; 
+	height: 20px;
+	margin-right: 5px;
+}
+
+.install-app span {
+	font-size: 12px;
+}
+.install-app:hover {
+	color: white;
+}
+
+
+/* SIDEBAR USER */
+.user-icon {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #9ca3af;
+	
+}
+
+.profile-icon {
+	width : 20px ; 
+	height: 20px;
+	margin-right: 5px;
+	background-color: grey;
+	border-radius: 20px;
+
+}
+
+.user-icon span {
+	font-size : 12px; 
+	font-weight: 600;
+	color: white ; 
+}
+
+.sidebar-divider {
+	width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0 15px 0;
 }
