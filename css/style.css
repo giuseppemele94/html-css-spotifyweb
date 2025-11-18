@@ -1,6 +1,58 @@
+/* RESET */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* APP GENERALE */
+.app {
+  height: 100vh;         /* prende tutta la viewport */
+  display: flex;
+  flex-direction: column; 
+}
+
+/* PARTE ALTA (sidebar + contenuto) */
+.app-top {
+  height: calc(100vh - 90px); /* ALTEZZA TOTALE MENO PLAYER */
+  display: flex;
+  
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;               
+  background-color: #111827;  
+  padding: 20px;
+  overflow: auto;           /* scroll della sidebar al rimpicciolimento*/
+}
+
+/* CONTENUTO CENTRALE */
+.main-content {
+  flex-grow: 1;
+  background-color: #1e293b; 
+  padding: 20px;
+  overflow: auto;          /* scroll del contenuto centrale */
+}
+
+.main-content h1 {
+  margin-bottom: 20px;
+}
+
+/* PLAYER IN BASSO */
+.player-bar {
+  height: 90px;               /* altezza fissa */
+  background-color: #18181b;  
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
