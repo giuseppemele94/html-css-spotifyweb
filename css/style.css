@@ -397,7 +397,11 @@ body {
 
 .right-player {
 	display: flex ; 
-	flex-basis : 25% 
+	flex-basis : 25% ; 
+	gap : 12px; 
+	margin-right : 10px; 
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .center-player {
@@ -420,6 +424,7 @@ body {
 	display: flex;
 	gap : 12px ; 
 }
+
 .track-artist {
     font-size: 11px;
     color: #9ca3af;
@@ -433,4 +438,34 @@ body {
 	color : #9ca3af;
 	cursor : pointer ; 
 
+}
+
+.folder-actions {
+	padding-left : 20px; 
+	display: flex;
+	gap : 12px ; 
+}
+
+.folder-actions i {
+	color: white ; 
+	cursor : pointer ; 
+}
+
+.folder-actions i:hover {
+	color : #9ca3af;
+}
+
+.volume-bar {
+	display : flex; 
+    width: 100px;
+    height: 4px;
+    background-color: #4b4b4b;
+    border-radius: 999px;
+	margin-top : 5px; 
+}
+
+.volume-fill {
+    width: 60%;              /* "livello" del volume */
+    height: 100%;
+    background-color: #ffffff;
 }
