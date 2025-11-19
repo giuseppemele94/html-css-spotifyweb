@@ -286,10 +286,13 @@ body {
 
 .album-card {
 	width : calc((100% - 5 * 20px) / 6);
+	cursor : pointer;
+	
 }
 
 .album-cover img {
 	width : 100%; 
+	 
 }
 
 .album-title {
@@ -335,4 +338,39 @@ body {
 /* Immagine tonda */
 .circle-card .album-cover img {
     border-radius: 50%;
+}
+
+
+/* EFFETTO HOVER SULLE CARD */
+
+.album-cover {
+	position: relative;
+}
+
+.recently-played .album-cover img {
+    display: block;
+    width: 100%;
+    
+}
+
+/* Bottone play nascosto di default */
+.play-btn {
+    position: absolute;
+    inset: 0;                          /* occupa tutta l'immagine */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    opacity: 0;                        /* nascosto */
+    
+}
+
+/* HOVER: scurisco immagine + mostro play */
+.recently-played .album-card:hover .album-cover img {
+    filter: brightness(0.4);
+}
+
+.recently-played .album-card:hover .play-btn {
+    opacity: 1; /* mostro il pulsante al passaggio con il mouse */
 }
