@@ -378,14 +378,59 @@ body {
 /* PLAYER BAR CONTAINER*/
 
 .player-bar-container {
-	width : 90%; 
+	 height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin: 0 auto ; 
 	
+	
 }
 
-.left-player img {
-	width : 60px; 
+.left-player {
+	display: flex;
+	flex-basis: 25%;
+	gap : 12px; 
+	margin-left : 10px; 
+	align-items : center ; 
+}
+
+.right-player {
+	display: flex ; 
+	flex-basis : 25% 
+}
+
+.center-player {
+	display: flex ; 
+	flex-grow: 1;
+}
+
+.track-cover img {
+	width : 56px ; 
+	height : 56px ; 
+}
+
+.track-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.track-actions {
+	padding-left : 20px; 
+	display: flex;
+	gap : 12px ; 
+}
+.track-artist {
+    font-size: 11px;
+    color: #9ca3af;
+}
+
+.track-actions i:hover {
+	color : white;
+}
+
+.track-actions i {
+	color : #9ca3af;
+	cursor : pointer ; 
+
 }
