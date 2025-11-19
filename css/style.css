@@ -61,9 +61,8 @@ body {
 	/* altezza fissa */
 	background-color: #18181b;
 	border-top: 1px solid #333;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	
+	
 }
 
 /* BARRA CON PULSANTE TRATTATO COME HEADER */
@@ -373,4 +372,20 @@ body {
 
 .recently-played .album-card:hover .play-btn {
     opacity: 1; /* mostro il pulsante al passaggio con il mouse */
+}
+
+
+/* PLAYER BAR CONTAINER*/
+
+.player-bar-container {
+	width : 90%; 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto ; 
+	
+}
+
+.left-player img {
+	width : 60px; 
 }
