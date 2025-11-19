@@ -38,6 +38,7 @@ body {
 	display : flex ; 
 	flex-direction: column;
 	justify-content: space-between;
+	flex-shrink: 0; /* per non farla stringere*/ 
 	
 }
 
@@ -162,7 +163,7 @@ body {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	color: #9ca3af;;
+	color: #9ca3af;
 	font-size: 15px;
 }
 
@@ -265,4 +266,39 @@ body {
     height: 1px;
     background-color: white;
     margin: 10px 0 15px 0;
+}
+
+/* CONTENUTO CENTRALE CON LE CARD */
+
+.section-title {
+    padding-left : 15px ; 
+	padding-bottom: 20px;
+}
+
+
+.cards-row {
+	display: flex;
+	gap : 20px; 
+	padding-left: 15px; 
+	
+}
+
+.album-card {
+	width : calc((100% - 5 * 20px) / 6);
+}
+
+.album-cover img {
+	width : 100%; 
+}
+
+.album-title {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.album-subtitle {
+	text-align: center;
+	color: #9ca3af;
+	font-size: 14px;
 }
