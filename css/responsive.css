@@ -1,0 +1,55 @@
+/* -------- TABLET: fino a 878px -------- */
+@media screen and (max-width: 878px) {
+
+    /* TABS che vanno a capo */
+    .tabs-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        padding: 0 20px;
+    }
+
+    .tab-link {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* sia la riga di Recently played che le righe sotto
+       possono andare a capo */
+    .cards-row,
+    .generic-row {
+        flex-wrap: wrap;
+    }
+
+      .album-card {
+        width: calc((100% - 3 * 20px) / 4);
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+    }
+
+
+.track-actions {
+    flex-direction: column;
+}
+   .player-controls {
+    gap : 10px
+   }
+}
+
+@media screen and (max-width : 639px) {
+    
+     /* sia la riga di Recently played che le righe sotto
+       possono andare a capo */
+    .cards-row,
+    .generic-row {
+        flex-wrap: wrap;
+    }
+
+      .album-card {
+        width: calc((100% - 3 * 20px) / 2);
+    }
+
+}
