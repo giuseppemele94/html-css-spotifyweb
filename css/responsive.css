@@ -52,14 +52,5 @@
         width: calc((100% - 3 * 20px) / 2);
     }
 
-    .left-player {
-        flex-basis : 20% ; 
-    }
-    .right-player {
-        flex-basis: 20%; 
-    }
-    .center-player {
-        flex-grow: 1;
-    }
-
+    
 }
