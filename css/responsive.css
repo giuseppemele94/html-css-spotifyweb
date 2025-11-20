@@ -56,3 +56,81 @@
 
     
 }
+
+
+/* -------- MOBILE: fino a 552px -------- */
+@media screen and (max-width: 552px) {
+
+    /* Sidebar ristretta */
+    .sidebar {
+        width: 60px;              /* sidebar  più stretta */
+        align-items: center;
+    }
+
+    .logo-full {
+        display : none ; 
+    }
+    .logo-small {
+        display: block ; 
+    }
+
+    /* Logo più piccolo */
+    .sidebar-logo img {
+        width: 35px;
+    }
+
+    /* Nascondo TUTTE le scritte */
+    .sidebar-link span,
+    .playlist-link,
+    .sidebar-title,
+    .playlist-plus ,
+    .install-app span,
+    .user-icon span {
+        display: none ;
+    }
+
+    /* Icone centrate */
+    .sidebar-link {
+        justify-content: center;
+    }
+
+    .sidebar-icon {
+        margin: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    .install-app {
+        justify-content: center;
+        padding-bottom : 20px;
+    }
+
+    .install-icon {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* User: solo cerchio */
+    .profile-icon {
+        margin: 0;
+        width: 26px;
+        height: 26px;
+    }
+
+    .sidebar-divider {
+        display: none;
+    }
+
+    .track-cover img {
+        width : 35px;
+        height : 35px ; 
+    }
+
+    /*Restringo il player*/
+
+    .track-actions {
+        margin-left : -20px; 
+        padding : 20px; 
+    }
+}

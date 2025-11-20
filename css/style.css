@@ -32,7 +32,6 @@ body {
 	width: 230px;
 	background-color: black;
 	padding: 20px;
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -40,6 +39,9 @@ body {
 	/* per non farla stringere*/
 }
 
+.logo-small {
+	display: none ; 
+}
 /* CONTENUTO CENTRALE */
 .main-content {
 	flex-grow: 1;
