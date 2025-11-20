@@ -60,9 +60,10 @@ body {
 	border-top: 1px solid #333;
 }
 
+
 /* BARRA CON PULSANTE TRATTATO COME HEADER */
 .header-bar {
-    flex-grow: 1;
+    flex-grow: 1; /*tolta larghezza calcolata perchè creava scroll orizzontale la main section*/
 	height: 80px;
 	position: sticky;
 	top: 0;
