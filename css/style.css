@@ -88,6 +88,11 @@ body {
 	font-size: 13px;
 }
 
+.upgrade-btn:hover {
+    transform: scale(1.07);     /* leggero ingrandimento */
+   
+}
+
 /* BARRA TAB */
 .main-tabs {
 	padding: 40px 0;
