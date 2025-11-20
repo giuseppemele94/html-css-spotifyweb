@@ -40,8 +40,9 @@ body {
 }
 
 .logo-small {
-	display: none ; 
+	display: none;
 }
+
 /* CONTENUTO CENTRALE */
 .main-content {
 	flex-grow: 1;
@@ -65,7 +66,8 @@ body {
 
 /* BARRA CON PULSANTE TRATTATO COME HEADER */
 .header-bar {
-    flex-grow: 1; /*tolta larghezza calcolata perchè creava scroll orizzontale la main section*/
+	flex-grow: 1;
+	/*tolta larghezza calcolata perchè creava scroll orizzontale la main section*/
 	height: 80px;
 	position: sticky;
 	top: 0;
@@ -135,8 +137,10 @@ body {
 .sidebar-top {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;   /* occupa lo spazio tra top e bottom */
-	min-height: 0;  /* importante per permettere lo scroll interno */
+	flex-grow: 1;
+	/* occupa lo spazio tra top e bottom */
+	min-height: 0;
+	/* importante per permettere lo scroll interno */
 	padding-bottom: 20px;
 }
 
@@ -433,6 +437,14 @@ body {
 	color: #9ca3af;
 }
 
+.track-info {
+	cursor: pointer;
+}
+
+.track-info:hover {
+	text-decoration: underline;
+}
+
 .track-actions i:hover {
 	color: white;
 }
@@ -471,6 +483,11 @@ body {
 	/* "livello" del volume */
 	height: 100%;
 	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.volume-fill:hover {
+	background-color: #1db954;
 }
 
 .player-controls {
@@ -494,7 +511,7 @@ body {
 }
 
 .play-button {
-	
+
 	cursor: pointer;
 }
 
@@ -516,6 +533,7 @@ body {
 	height: 4px;
 	background-color: #4b4b4b;
 	border-radius: 999px;
+	cursor: pointer;
 }
 
 .progress-fill {
@@ -523,4 +541,8 @@ body {
 	/* percentuale brano */
 	height: 100%;
 	background-color: #ffffff;
+}
+
+.progress-fill:hover {
+	background-color: #1db954;
 }
