@@ -32,7 +32,7 @@ body {
 	width: 230px;
 	background-color: black;
 	padding: 20px;
-	overflow-y: auto;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -131,6 +131,10 @@ body {
 /* SIDEBAR  BLOCCO LOGO*/
 
 .sidebar-top {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;   /* occupa lo spazio tra top e bottom */
+	min-height: 0;  /* importante per permettere lo scroll interno */
 	padding-bottom: 20px;
 }
 
@@ -177,6 +181,9 @@ body {
 
 .sidebar-playlist {
 	margin-top: 25px;
+	flex-grow: 1;
+	min-height: 0;
+	overflow-y: auto;
 }
 
 .sidebar-title {
