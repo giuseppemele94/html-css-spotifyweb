@@ -22,7 +22,7 @@
         flex-wrap: wrap;
     }
 
-      .album-card {
+    .album-card {
         width: calc((100% - 3 * 20px) / 4);
     }
 
@@ -30,26 +30,36 @@
         font-size: 12px;
     }
 
+    .track-actions {
+        flex-direction: column;
+    }
 
-.track-actions {
-    flex-direction: column;
-}
-   .player-controls {
-    gap : 10px
-   }
+    .player-controls {
+        gap: 10px
+    }
 }
 
 @media screen and (max-width : 639px) {
-    
-     /* sia la riga di Recently played che le righe sotto
+
+    /* sia la riga di Recently played che le righe sotto
        possono andare a capo */
     .cards-row,
     .generic-row {
         flex-wrap: wrap;
     }
 
-      .album-card {
+    .album-card {
         width: calc((100% - 3 * 20px) / 2);
+    }
+
+    .left-player {
+        flex-basis : 20% ; 
+    }
+    .right-player {
+        flex-basis: 20%; 
+    }
+    .center-player {
+        flex-grow: 1;
     }
 
 }
